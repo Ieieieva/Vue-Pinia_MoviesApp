@@ -24,9 +24,20 @@ export default {
       onSearchMovie()
     }
 
+    const onPrevPage = () => {
+      store.getSearchedMovies(title.value, store.currentPage - 1)
+      console.log(store.currentPage)
+    }
+
+    const onNextPage = () => {
+      store.getSearchedMovies(title.value, store.currentPage + 1)
+      console.log(store.currentPage)
+    }
+
     const movies = computed(() => store.movies)
     const selectedMovie = computed(() => store.selectedMovie)
     const loading = computed(() => store.loading)
+    const currentPage = computed(() => store.currentPage)
 
     return {
       movies,
@@ -35,7 +46,10 @@ export default {
       title,
       onSearchMovie,
       onSelectMovie,
-      onSubmit
+      onSubmit,
+      currentPage,
+      onPrevPage,
+      onNextPage
     }
   },
   components: { TheLoadingVue }
