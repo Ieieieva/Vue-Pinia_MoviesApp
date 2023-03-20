@@ -74,6 +74,14 @@ export default {
   padding: 30px;
   align-items: center;
 }
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .details__container {
+    width: 100vw;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+}
+
 .details__heading {
   font-size: 2rem;
   padding: 20px;
@@ -82,18 +90,33 @@ export default {
               0px 24px 2px rgba(0,0,0,0.1),
               0px 34px 30px rgba(0,0,0,0.1);
 }
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .details__heading {
+    font-size: 1.2rem;
+  }
+}
+
 .movie__info {
   display: flex;
   gap: 30px;
 }
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .movie__info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .movie__details {
   display: flex;
   flex-direction: column;
 }
+
 .movie__poster {
   max-width: 300px;
   box-shadow: 5px 5px 10px;
 }
+
 .movie__nums {
   display: flex;
   gap: 10px;
@@ -101,6 +124,7 @@ export default {
   padding: 10px;
   font-weight: 700;
 }
+
 .movie__genre {
   padding-left: 10px;
 }

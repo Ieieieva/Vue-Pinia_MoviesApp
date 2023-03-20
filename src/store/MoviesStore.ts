@@ -33,7 +33,8 @@ export const useMoviesStore = defineStore('MoviesStore', {
     movies: [] as Movie[],
     selectedMovie: {} as DetailedMovie,
     loading: false,
-    currentPage: 1
+    currentPage: 1,
+    totalPages: 0
   }),
   
   actions: {

@@ -22,6 +22,7 @@ export default {
   flex-direction: column;
   align-items: center;
 }
+
 .home__title {
   text-align: center;
   font-size: 4rem;
@@ -31,6 +32,12 @@ export default {
     -1px 3px 1px #ad7575, 
     -2px 5px 1px #bf8080;
 }
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .home__title {
+    font-size: 2.5rem;
+  }
+}
+
 .home__movieList {
   align-self: flex-start;
 }

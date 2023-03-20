@@ -13,12 +13,12 @@ useMoviesStore();
             Home
         </RouterLink>
         
-        <RouterLink  
+        <!-- <RouterLink  
           to="/about"
-          class="navlink">
+          class="navlink"> -->
             <!-- eslint-disable-next-line vue/no-parsing-error -->
-            &#x1F3AC
-        </RouterLink>
+            <!-- &#x1F3AC
+        </RouterLink> -->
       </nav>
   </header>
 

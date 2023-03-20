@@ -17,3 +17,15 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  body {
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 730px) {
+  body {
+    background-size: cover;
+  }
+}
