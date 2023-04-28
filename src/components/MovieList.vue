@@ -98,6 +98,7 @@ export default {
   .movielist__container {
     align-items: center;
     margin: 0 auto;
+    max-width: 100vw;
   }
 }
 
